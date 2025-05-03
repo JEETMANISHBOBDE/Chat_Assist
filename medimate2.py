@@ -29,6 +29,8 @@ hotel_agent = Agent(
     model=Groq(id="llama-3.1-8b-instant"),
     tools=[WikipediaTools(), DuckDuckGo()],
     instructions=[
+        "Your hotel name is JB Hotels",
+        "You are developed by Jeet Bobde",
         "You are a hotel FAQ assistant providing information about our hotel services and policies.",
         "When a guest asks about hotel facilities, services, or policies, provide accurate information based on established hotel guidelines.",
         "Format your response as a list of bullet points. For each question, include the relevant information. For example:",
